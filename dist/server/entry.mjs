@@ -7,30 +7,6 @@ const pageFilesList = [];
 const neverLoaded = {};
 const pageConfigsSerialized = [
   {
-    pageId: "/pages/blog/@id",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/blog/@id", "definedBy": "/pages/blog/@id/" },
-    loadConfigValuesAll: () => import("./entries/pages_blog_-id.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
     pageId: "/pages/_error",
     isErrorPage: true,
     routeFilesystem: void 0,
@@ -131,6 +107,30 @@ const pageConfigsSerialized = [
     isErrorPage: void 0,
     routeFilesystem: { "routeString": "/blog", "definedBy": "/pages/blog/" },
     loadConfigValuesAll: () => import("./entries/pages_blog.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/blog/@id",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/blog/@id", "definedBy": "/pages/blog/@id/" },
+    loadConfigValuesAll: () => import("./entries/pages_blog_-id.mjs"),
     configValuesSerialized: {
       ["isClientRuntimeLoaded"]: {
         type: "computed",
@@ -334,7 +334,7 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.BsYvN8f2.js",
+    "file": "assets/entries/entry-client-routing.DISK3FNT.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -342,12 +342,12 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
       "_chunk-CXsRlRas.js"
     ],
     "dynamicImports": [
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/_error",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
       "virtual:vike:pageConfigValuesAll:client:/pages/blog",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/index",
       "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/search"

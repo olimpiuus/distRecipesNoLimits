@@ -76,7 +76,7 @@
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.BsYvN8f2.js",
+    "file": "assets/entries/entry-client-routing.DISK3FNT.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -84,12 +84,12 @@
       "_chunk-CXsRlRas.js"
     ],
     "dynamicImports": [
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/_error",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
       "virtual:vike:pageConfigValuesAll:client:/pages/blog",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/index",
       "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/search"
