@@ -1,6 +1,6 @@
 import import1 from "vike-react/__internal/components/Loading";
 import { onRenderHtml } from "vike-react/__internal/integration/onRenderHtml";
-import { L as LayoutDefault, i as import4 } from "../chunks/chunk-C57gFlQ-.js";
+import { L as LayoutDefault, i as import4 } from "../chunks/chunk-COyXCbqz.js";
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
