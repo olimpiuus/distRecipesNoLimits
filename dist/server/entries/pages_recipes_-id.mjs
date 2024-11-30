@@ -1,10 +1,11 @@
 import import1 from "vike-react/__internal/components/Loading";
 import { onRenderHtml } from "vike-react/__internal/integration/onRenderHtml";
 import { L as LayoutDefault, i as import4 } from "../chunks/chunk-COyXCbqz.js";
-import { jsxs, jsx, Fragment } from "react/jsx-runtime";
+import { jsxs, Fragment, jsx } from "react/jsx-runtime";
 import "react";
 import { useData } from "vike-react/useData";
 import { M as MealCard } from "../chunks/chunk-DeFJnAxZ.js";
+import { Helmet } from "react-helmet";
 import { useConfig } from "vike-react/useConfig";
 /* empty css                       */
 /* empty css                       */
@@ -109,63 +110,66 @@ function Page() {
     //   }
     // })
   };
-  return /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg", children: [
-    /* @__PURE__ */ jsx(
-      "script",
-      {
-        type: "application/ld+json",
-        dangerouslySetInnerHTML: { __html: JSON.stringify(recipeStructuredData) }
-      }
-    ),
-    recipeData.mealId && /* @__PURE__ */ jsxs(Fragment, { children: [
-      /* @__PURE__ */ jsx("h2", { className: `text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to} mb-8`, children: meal.name }),
-      /* @__PURE__ */ jsx("a", { href: "#recipe", target: "_self", className: "text-blue-500 hover:underline font-semibold  p-3 block", children: "Jump to Recipe" }),
-      /* @__PURE__ */ jsx("p", { className: "text-xl text-gray-700 mb-8 leading-relaxed font-medium text-justify", children: recipeData.introduction }),
-      /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
-        /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.faq.from} ${colors.faq.to}`, children: "Ingredients" }),
-        /* @__PURE__ */ jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: (_a = recipeData.ingredients) == null ? void 0 : _a.map((ingredient, index) => /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.faq.border} hover:shadow-xl transition-shadow`, children: [
-          /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.faq.text}`, children: ingredient.name }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: ingredient.advice })
-        ] }, index)) })
-      ] }),
-      /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
-        /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to}`, children: "Cooking Steps" }),
-        /* @__PURE__ */ jsx("ul", { className: "space-y-6", children: (_b = recipeData.cookingSteps) == null ? void 0 : _b.map((step, index) => /* @__PURE__ */ jsxs("li", { id: `coocking-step-${slugify(step.name)}`, className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
-          /* @__PURE__ */ jsxs("h3", { className: "text-xl font-bold mb-3 text-gray-800", children: [
-            "Step ",
-            index + 1,
-            ": ",
-            /* @__PURE__ */ jsx("span", { className: colors.primary.text, children: step.name })
-          ] }),
-          /* @__PURE__ */ jsx("div", { className: "text-gray-700 leading-relaxed", children: formatStepDescription(step.description) })
-        ] }, index)) })
-      ] }),
-      /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
-        /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.faq.from} ${colors.faq.to}`, children: "Frequently Asked Questions" }),
-        /* @__PURE__ */ jsx("div", { className: "space-y-6", children: (_c = recipeData.faqs) == null ? void 0 : _c.map((faq, index) => /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.faq.border} hover:shadow-xl transition-shadow`, children: [
-          /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.faq.text}`, children: faq.question }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: faq.answer })
-        ] }, index)) })
-      ] }),
-      /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
-        /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to}`, children: "Additional Information" }),
-        /* @__PURE__ */ jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
-          recipeData.pairings.dietary_considerations && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
-            /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Dietary Considerations" }),
-            /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.dietary_considerations })
-          ] }),
-          recipeData.pairings.pairings && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
-            /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Pairings" }),
-            /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.pairings })
-          ] }),
-          recipeData.pairings.serving_suggestions && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
-            /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Serving Suggestions" }),
-            /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.serving_suggestions })
+  return /* @__PURE__ */ jsxs(Fragment, { children: [
+    !recipeData.mealId && /* @__PURE__ */ jsx(Helmet, { children: /* @__PURE__ */ jsx("meta", { name: "robots", content: "noindex, nofollow" }) }),
+    /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg", children: [
+      /* @__PURE__ */ jsx(
+        "script",
+        {
+          type: "application/ld+json",
+          dangerouslySetInnerHTML: { __html: JSON.stringify(recipeStructuredData) }
+        }
+      ),
+      recipeData.mealId && /* @__PURE__ */ jsxs(Fragment, { children: [
+        /* @__PURE__ */ jsx("h2", { className: `text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to} mb-8`, children: meal.name }),
+        /* @__PURE__ */ jsx("a", { href: "#recipe", target: "_self", className: "text-blue-500 hover:underline font-semibold  p-3 block", children: "Jump to Recipe" }),
+        /* @__PURE__ */ jsx("p", { className: "text-xl text-gray-700 mb-8 leading-relaxed font-medium text-justify", children: recipeData.introduction }),
+        /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
+          /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.faq.from} ${colors.faq.to}`, children: "Ingredients" }),
+          /* @__PURE__ */ jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: (_a = recipeData.ingredients) == null ? void 0 : _a.map((ingredient, index) => /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.faq.border} hover:shadow-xl transition-shadow`, children: [
+            /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.faq.text}`, children: ingredient.name }),
+            /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: ingredient.advice })
+          ] }, index)) })
+        ] }),
+        /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
+          /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to}`, children: "Cooking Steps" }),
+          /* @__PURE__ */ jsx("ul", { className: "space-y-6", children: (_b = recipeData.cookingSteps) == null ? void 0 : _b.map((step, index) => /* @__PURE__ */ jsxs("li", { id: `coocking-step-${slugify(step.name)}`, className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
+            /* @__PURE__ */ jsxs("h3", { className: "text-xl font-bold mb-3 text-gray-800", children: [
+              "Step ",
+              index + 1,
+              ": ",
+              /* @__PURE__ */ jsx("span", { className: colors.primary.text, children: step.name })
+            ] }),
+            /* @__PURE__ */ jsx("div", { className: "text-gray-700 leading-relaxed", children: formatStepDescription(step.description) })
+          ] }, index)) })
+        ] }),
+        /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
+          /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.faq.from} ${colors.faq.to}`, children: "Frequently Asked Questions" }),
+          /* @__PURE__ */ jsx("div", { className: "space-y-6", children: (_c = recipeData.faqs) == null ? void 0 : _c.map((faq, index) => /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.faq.border} hover:shadow-xl transition-shadow`, children: [
+            /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.faq.text}`, children: faq.question }),
+            /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: faq.answer })
+          ] }, index)) })
+        ] }),
+        /* @__PURE__ */ jsxs("section", { className: "mb-12 text-justify", children: [
+          /* @__PURE__ */ jsx("h2", { className: `text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${colors.primary.from} ${colors.primary.to}`, children: "Additional Information" }),
+          /* @__PURE__ */ jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6", children: [
+            recipeData.pairings.dietary_considerations && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
+              /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Dietary Considerations" }),
+              /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.dietary_considerations })
+            ] }),
+            recipeData.pairings.pairings && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
+              /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Pairings" }),
+              /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.pairings })
+            ] }),
+            recipeData.pairings.serving_suggestions && /* @__PURE__ */ jsxs("div", { className: `bg-white rounded-xl shadow-lg p-6 border-l-4 ${colors.primary.border} hover:shadow-xl transition-shadow`, children: [
+              /* @__PURE__ */ jsx("h3", { className: `text-xl font-bold mb-3 ${colors.primary.text}`, children: "Serving Suggestions" }),
+              /* @__PURE__ */ jsx("p", { className: "text-gray-700", children: recipeData.pairings.serving_suggestions })
+            ] })
           ] })
         ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsx("div", { className: "mt-12", id: "recipe", children: /* @__PURE__ */ jsx(MealCard, { mealData: meal, description: meal.intro, showAddToCartButton: false }) })
+      ] }),
+      /* @__PURE__ */ jsx("div", { className: "mt-12", id: "recipe", children: /* @__PURE__ */ jsx(MealCard, { mealData: meal, description: meal.intro, showAddToCartButton: false }) })
+    ] })
   ] });
 }
 const import5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({

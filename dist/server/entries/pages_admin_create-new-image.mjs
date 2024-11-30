@@ -1,8 +1,9 @@
 import import1 from "vike-react/__internal/components/Loading";
 import { onRenderHtml } from "vike-react/__internal/integration/onRenderHtml";
 import { L as LayoutDefault, i as import4 } from "../chunks/chunk-COyXCbqz.js";
-import { jsxs, jsx } from "react/jsx-runtime";
+import { jsxs, Fragment, jsx } from "react/jsx-runtime";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 /* empty css                       */
 /* empty css                       */
 /* empty css                       */
@@ -23,22 +24,25 @@ const CreateNewImage = () => {
     const data = await res.json();
     setResponse(data);
   };
-  return /* @__PURE__ */ jsxs("div", { children: [
-    /* @__PURE__ */ jsx("h1", { children: "Create New Image" }),
-    /* @__PURE__ */ jsxs("form", { onSubmit: handleSubmit, children: [
-      /* @__PURE__ */ jsx(
-        "input",
-        {
-          type: "text",
-          value: imageId,
-          onChange: (e) => setImageId(e.target.value),
-          placeholder: "Enter Meal ID",
-          required: true
-        }
-      ),
-      /* @__PURE__ */ jsx("button", { type: "submit", children: "Generate Image" })
-    ] }),
-    response && /* @__PURE__ */ jsx("div", { children: JSON.stringify(response) })
+  return /* @__PURE__ */ jsxs(Fragment, { children: [
+    /* @__PURE__ */ jsx(Helmet, { children: /* @__PURE__ */ jsx("meta", { name: "robots", content: "noindex, nofollow" }) }),
+    /* @__PURE__ */ jsxs("div", { children: [
+      /* @__PURE__ */ jsx("h1", { children: "Create New Image" }),
+      /* @__PURE__ */ jsxs("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ jsx(
+          "input",
+          {
+            type: "text",
+            value: imageId,
+            onChange: (e) => setImageId(e.target.value),
+            placeholder: "Enter Meal ID",
+            required: true
+          }
+        ),
+        /* @__PURE__ */ jsx("button", { type: "submit", children: "Generate Image" })
+      ] }),
+      response && /* @__PURE__ */ jsx("div", { children: JSON.stringify(response) })
+    ] })
   ] });
 };
 const import5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
