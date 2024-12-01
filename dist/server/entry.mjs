@@ -7,102 +7,6 @@ const pageFilesList = [];
 const neverLoaded = {};
 const pageConfigsSerialized = [
   {
-    pageId: "/pages/_error",
-    isErrorPage: true,
-    routeFilesystem: void 0,
-    loadConfigValuesAll: () => import("./entries/pages_error.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/admin/create-blog",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/admin/create-blog", "definedBy": "/pages/admin/create-blog/" },
-    loadConfigValuesAll: () => import("./entries/pages_admin_create-blog.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/admin/create-new-image",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/admin/create-new-image", "definedBy": "/pages/admin/create-new-image/" },
-    loadConfigValuesAll: () => import("./entries/pages_admin_create-new-image.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/admin/createArticle",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/admin/createArticle", "definedBy": "/pages/admin/createArticle/" },
-    loadConfigValuesAll: () => import("./entries/pages_admin_createArticle.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
     pageId: "/pages/blog",
     isErrorPage: void 0,
     routeFilesystem: { "routeString": "/blog", "definedBy": "/pages/blog/" },
@@ -199,6 +103,102 @@ const pageConfigsSerialized = [
     }
   },
   {
+    pageId: "/pages/_error",
+    isErrorPage: true,
+    routeFilesystem: void 0,
+    loadConfigValuesAll: () => import("./entries/pages_error.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/admin/create-blog",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/admin/create-blog", "definedBy": "/pages/admin/create-blog/" },
+    loadConfigValuesAll: () => import("./entries/pages_admin_create-blog.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/admin/create-new-image",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/admin/create-new-image", "definedBy": "/pages/admin/create-new-image/" },
+    loadConfigValuesAll: () => import("./entries/pages_admin_create-new-image.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/admin/createArticle",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/admin/createArticle", "definedBy": "/pages/admin/createArticle/" },
+    loadConfigValuesAll: () => import("./entries/pages_admin_createArticle.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
     pageId: "/pages/search",
     isErrorPage: void 0,
     routeFilesystem: { "routeString": "/search", "definedBy": "/pages/search/" },
@@ -270,15 +270,29 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     "src": "_chunk-!~{00d}~.js"
   },
   "_chunk-!~{00e}~.js": {
-    "file": "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+    "file": "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
     "src": "_chunk-!~{00e}~.js"
   },
   "_chunk-!~{00f}~.js": {
     "file": "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
     "src": "_chunk-!~{00f}~.js"
   },
-  "_chunk-B8MOoQYQ.js": {
-    "file": "assets/chunks/chunk-B8MOoQYQ.js",
+  "_chunk-BguRpZRb.js": {
+    "file": "assets/chunks/chunk-BguRpZRb.js",
+    "name": "Helmet",
+    "imports": [
+      "_chunk-BuLkwGUr.js"
+    ]
+  },
+  "_chunk-BsG6zfEV.js": {
+    "file": "assets/chunks/chunk-BsG6zfEV.js",
+    "name": "useData",
+    "imports": [
+      "_chunk-BuLkwGUr.js"
+    ]
+  },
+  "_chunk-BuLkwGUr.js": {
+    "file": "assets/chunks/chunk-BuLkwGUr.js",
     "name": "_onPageTransitionStart",
     "imports": [
       "_chunk-CXsRlRas.js"
@@ -286,62 +300,48 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
-    ]
-  },
-  "_chunk-BTWFEZUG.js": {
-    "file": "assets/chunks/chunk-BTWFEZUG.js",
-    "name": "RecipeCard",
-    "imports": [
-      "_chunk-B8MOoQYQ.js"
-    ]
-  },
-  "_chunk-BX696myR.js": {
-    "file": "assets/chunks/chunk-BX696myR.js",
-    "name": "Helmet",
-    "imports": [
-      "_chunk-B8MOoQYQ.js"
-    ]
-  },
-  "_chunk-C1PDiBIl.js": {
-    "file": "assets/chunks/chunk-C1PDiBIl.js",
-    "name": "BlogPostCard",
-    "imports": [
-      "_chunk-B8MOoQYQ.js"
-    ]
-  },
-  "_chunk-CHQPIMI2.js": {
-    "file": "assets/chunks/chunk-CHQPIMI2.js",
-    "name": "useData",
-    "imports": [
-      "_chunk-B8MOoQYQ.js"
-    ]
-  },
-  "_chunk-CQU6upKd.js": {
-    "file": "assets/chunks/chunk-CQU6upKd.js",
-    "name": "PlogPost",
-    "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-CgV_jjfO.js"
     ]
   },
   "_chunk-CXsRlRas.js": {
     "file": "assets/chunks/chunk-CXsRlRas.js",
     "name": "executeHook"
   },
-  "_chunk-CgV_jjfO.js": {
-    "file": "assets/chunks/chunk-CgV_jjfO.js",
+  "_chunk-Cvvvrain.js": {
+    "file": "assets/chunks/chunk-Cvvvrain.js",
+    "name": "RecipeCard",
+    "imports": [
+      "_chunk-BuLkwGUr.js"
+    ]
+  },
+  "_chunk-DFBN5l3S.js": {
+    "file": "assets/chunks/chunk-DFBN5l3S.js",
     "name": "MealCard",
     "imports": [
-      "_chunk-B8MOoQYQ.js"
+      "_chunk-BuLkwGUr.js"
     ],
     "css": [
       "assets/static/components_MealCard_style-53c05b48.pl9UzD9T.css"
     ]
   },
+  "_chunk-DfmzVKAB.js": {
+    "file": "assets/chunks/chunk-DfmzVKAB.js",
+    "name": "PlogPost",
+    "imports": [
+      "_chunk-BuLkwGUr.js",
+      "_chunk-DFBN5l3S.js"
+    ]
+  },
+  "_chunk-miHOMhm7.js": {
+    "file": "assets/chunks/chunk-miHOMhm7.js",
+    "name": "BlogPostCard",
+    "imports": [
+      "_chunk-BuLkwGUr.js"
+    ]
+  },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.DPyGkv0Y.js",
+    "file": "assets/entries/entry-client-routing.C9sj8Opt.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -349,31 +349,31 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
       "_chunk-CXsRlRas.js"
     ],
     "dynamicImports": [
-      "virtual:vike:pageConfigValuesAll:client:/pages/_error",
-      "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
-      "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
-      "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
       "virtual:vike:pageConfigValuesAll:client:/pages/blog",
       "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/index",
       "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/_error",
+      "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
+      "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
+      "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
       "virtual:vike:pageConfigValuesAll:client:/pages/search"
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/_error": {
-    "file": "assets/entries/pages_error.CrZqVvoC.js",
+    "file": "assets/entries/pages_error.C0yJxIVn.js",
     "name": "entries/pages/_error",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/_error",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
+      "_chunk-BuLkwGUr.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [
@@ -381,22 +381,22 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog": {
-    "file": "assets/entries/pages_admin_create-blog.xLkn6wLb.js",
+    "file": "assets/entries/pages_admin_create-blog.D1vOcWg1.js",
     "name": "entries/pages/admin/create-blog",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-BX696myR.js",
-      "_chunk-CQU6upKd.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BguRpZRb.js",
+      "_chunk-DfmzVKAB.js",
       "_chunk-CXsRlRas.js",
-      "_chunk-CgV_jjfO.js"
+      "_chunk-DFBN5l3S.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css",
       "assets/static/components_MealCard_style-53c05b48.pl9UzD9T.css"
     ],
@@ -405,20 +405,20 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image": {
-    "file": "assets/entries/pages_admin_create-new-image.BKUJVj44.js",
+    "file": "assets/entries/pages_admin_create-new-image.DVB2mrKF.js",
     "name": "entries/pages/admin/create-new-image",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-BX696myR.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BguRpZRb.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [
@@ -426,20 +426,20 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle": {
-    "file": "assets/entries/pages_admin_createArticle.B76dZZdU.js",
+    "file": "assets/entries/pages_admin_createArticle.CutYhW1J.js",
     "name": "entries/pages/admin/createArticle",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-BX696myR.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BguRpZRb.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [
@@ -447,21 +447,21 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/blog": {
-    "file": "assets/entries/pages_blog.DnfywxAU.js",
+    "file": "assets/entries/pages_blog.BncjpGMz.js",
     "name": "entries/pages/blog",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/blog",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-CHQPIMI2.js",
-      "_chunk-C1PDiBIl.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BsG6zfEV.js",
+      "_chunk-miHOMhm7.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [
@@ -469,22 +469,22 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id": {
-    "file": "assets/entries/pages_blog_-id.te9Ad1io.js",
+    "file": "assets/entries/pages_blog_-id.DijdoO8w.js",
     "name": "entries/pages/blog/@id",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-CHQPIMI2.js",
-      "_chunk-CQU6upKd.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BsG6zfEV.js",
+      "_chunk-DfmzVKAB.js",
       "_chunk-CXsRlRas.js",
-      "_chunk-CgV_jjfO.js"
+      "_chunk-DFBN5l3S.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css",
       "assets/static/components_MealCard_style-53c05b48.pl9UzD9T.css"
     ],
@@ -493,22 +493,22 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/index": {
-    "file": "assets/entries/pages_index.DrV7rJGv.js",
+    "file": "assets/entries/pages_index.Dpfe85Lu.js",
     "name": "entries/pages/index",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/index",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-C1PDiBIl.js",
-      "_chunk-CHQPIMI2.js",
-      "_chunk-BTWFEZUG.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-miHOMhm7.js",
+      "_chunk-BsG6zfEV.js",
+      "_chunk-Cvvvrain.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [
@@ -516,22 +516,22 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id": {
-    "file": "assets/entries/pages_recipes_-id.rtGCYOKx.js",
+    "file": "assets/entries/pages_recipes_-id.wI32JyXa.js",
     "name": "entries/pages/recipes/@id",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-CHQPIMI2.js",
-      "_chunk-CgV_jjfO.js",
-      "_chunk-BX696myR.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-BsG6zfEV.js",
+      "_chunk-DFBN5l3S.js",
+      "_chunk-BguRpZRb.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css",
       "assets/static/components_MealCard_style-53c05b48.pl9UzD9T.css"
     ],
@@ -540,20 +540,20 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/search": {
-    "file": "assets/entries/pages_search.CNAJsoRB.js",
+    "file": "assets/entries/pages_search.CtJQPzuk.js",
     "name": "entries/pages/search",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/search",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-B8MOoQYQ.js",
-      "_chunk-BTWFEZUG.js",
+      "_chunk-BuLkwGUr.js",
+      "_chunk-Cvvvrain.js",
       "_chunk-CXsRlRas.js"
     ],
     "css": [
       "assets/static/vike-react-b64a028b.BcWtY8Ol.css",
       "assets/static/layouts_style-b34a8e57.a91n6qlS.css",
-      "assets/static/layouts_tailwind-00e65532.BW0x2jlB.css",
+      "assets/static/layouts_tailwind-00e65532.__f0Kyew.css",
       "assets/static/components_Header_Header-2f2beb17.Bb9cbtn0.css"
     ],
     "assets": [

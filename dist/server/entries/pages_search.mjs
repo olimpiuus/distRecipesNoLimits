@@ -1,6 +1,6 @@
 import import1 from "vike-react/__internal/components/Loading";
 import { onRenderHtml } from "vike-react/__internal/integration/onRenderHtml";
-import { L as LayoutDefault, i as import4 } from "../chunks/chunk-COyXCbqz.js";
+import { L as LayoutDefault, i as import4 } from "../chunks/chunk-Cu_3oeEo.js";
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { R as RecipeCard } from "../chunks/chunk-Ck-Owxb3.js";
@@ -261,22 +261,6 @@ const configValuesSerialized = {
       type: "plus-file",
       exportValues: import4
     }]
-  },
-  ["title"]: {
-    type: "standard",
-    definedAtData: { "filePathToShowToUser": "/pages/+config.js", "fileExportPathToShowToUser": ["default", "title"] },
-    valueSerialized: {
-      type: "js-serialized",
-      value: "Recipes No Limits"
-    }
-  },
-  ["description"]: {
-    type: "standard",
-    definedAtData: { "filePathToShowToUser": "/pages/+config.js", "fileExportPathToShowToUser": ["default", "description"] },
-    valueSerialized: {
-      type: "js-serialized",
-      value: "Explore a world of delicious recipes with Recipes No Limits. From baking to meat dishes, discover articles and an AI-powered recipe generator to create meals tailored to your taste and dietary needs."
-    }
   },
   ["Page"]: {
     type: "standard",

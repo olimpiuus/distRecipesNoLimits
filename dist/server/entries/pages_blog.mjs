@@ -1,6 +1,7 @@
 import import1 from "vike-react/__internal/components/Loading";
 import { onRenderHtml } from "vike-react/__internal/integration/onRenderHtml";
-import { L as LayoutDefault, i as import4 } from "../chunks/chunk-COyXCbqz.js";
+import { L as LayoutDefault, i as import4 } from "../chunks/chunk-Cu_3oeEo.js";
+import { i as import5 } from "../chunks/chunk-Dv07Q67F.js";
 import { jsx, Fragment, jsxs } from "react/jsx-runtime";
 import "react";
 import { useData } from "vike-react/useData";
@@ -17,7 +18,7 @@ const BlogPage = () => {
     /* @__PURE__ */ jsx("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: posts.map((post) => /* @__PURE__ */ jsx(BlogPostCard, { post }, post.slug)) })
   ] }) });
 };
-const import5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const import6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: BlogPage
 }, Symbol.toStringTag, { value: "Module" }));
@@ -40,7 +41,7 @@ async function data() {
     };
   }
 }
-const import6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const import7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   data
 }, Symbol.toStringTag, { value: "Module" }));
@@ -87,8 +88,11 @@ const configValuesSerialized = {
   },
   ["Head"]: {
     type: "cumulative",
-    definedAtData: [{ "filePathToShowToUser": "/pages/+Head.jsx", "fileExportPathToShowToUser": [] }],
+    definedAtData: [{ "filePathToShowToUser": "/pages/blog/+Head.jsx", "fileExportPathToShowToUser": [] }, { "filePathToShowToUser": "/pages/+Head.jsx", "fileExportPathToShowToUser": [] }],
     valueSerialized: [{
+      type: "plus-file",
+      exportValues: import5
+    }, {
       type: "plus-file",
       exportValues: import4
     }]
@@ -98,23 +102,7 @@ const configValuesSerialized = {
     definedAtData: { "filePathToShowToUser": "/pages/blog/+Page.jsx", "fileExportPathToShowToUser": [] },
     valueSerialized: {
       type: "plus-file",
-      exportValues: import5
-    }
-  },
-  ["title"]: {
-    type: "standard",
-    definedAtData: { "filePathToShowToUser": "/pages/blog/+config.js", "fileExportPathToShowToUser": ["default", "title"] },
-    valueSerialized: {
-      type: "js-serialized",
-      value: "Delicious Recipes Blog - Recipes No Limits"
-    }
-  },
-  ["description"]: {
-    type: "standard",
-    definedAtData: { "filePathToShowToUser": "/pages/blog/+config.js", "fileExportPathToShowToUser": ["default", "description"] },
-    valueSerialized: {
-      type: "js-serialized",
-      value: "Discover a wide range of recipes from appetizers to desserts, perfect for every occasion."
+      exportValues: import6
     }
   },
   ["data"]: {
@@ -122,7 +110,7 @@ const configValuesSerialized = {
     definedAtData: { "filePathToShowToUser": "/pages/blog/+data.js", "fileExportPathToShowToUser": [] },
     valueSerialized: {
       type: "plus-file",
-      exportValues: import6
+      exportValues: import7
     }
   }
 };
