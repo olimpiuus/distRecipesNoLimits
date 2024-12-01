@@ -212,9 +212,10 @@ async function onBeforePrerenderStart() {
 async function fetchAllRecipeUrls() {
   const response = await fetch(`${baseUrl}/api/recipes/allRecipeUrls`);
   if (!response.ok) {
-    throw new Error("Failed to fetch recipe IDs");
+    throw new Error("Failed to fetch recipe Urls");
   }
   const recipeUrls = await response.json();
+  console.log(recipeUrls);
   return recipeUrls;
 }
 const import8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
