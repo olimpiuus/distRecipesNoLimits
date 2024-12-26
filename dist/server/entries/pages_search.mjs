@@ -106,7 +106,15 @@ function SearchResultPage() {
     }
   }, []);
   const fetchRecipes = useCallback(async (searchQuery, loadedMeals = []) => {
-    const baseUrl = `${window.location.protocol}//api.${window.location.host}:3002`;
+    const getMainDomain = (host) => {
+      const parts = host.split(".");
+      if (parts.length > 2) {
+        parts.shift();
+      }
+      return parts.join(".");
+    };
+    const mainDomain = getMainDomain(window.location.host);
+    const baseUrl = `${window.location.protocol}//api.${mainDomain}:3002`;
     const url = `${baseUrl}/api/recipes/customReceipt?search=${encodeURIComponent(searchQuery)}&loadedMeals=${encodeURIComponent(loadedMeals.join(","))}`;
     abortControllerRef.current = new AbortController();
     const { signal } = abortControllerRef.current;

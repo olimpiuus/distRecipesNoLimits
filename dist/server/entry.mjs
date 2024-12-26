@@ -341,7 +341,7 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.Dka7FRNt.js",
+    "file": "assets/entries/entry-client-routing.x4t8wrPn.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -540,7 +540,7 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/search": {
-    "file": "assets/entries/pages_search.DVr_fkcW.js",
+    "file": "assets/entries/pages_search.CDiS1pC8.js",
     "name": "entries/pages/search",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/search",
     "isEntry": true,
