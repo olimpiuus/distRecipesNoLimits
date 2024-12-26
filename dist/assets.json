@@ -83,7 +83,7 @@
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.C9sj8Opt.js",
+    "file": "assets/entries/entry-client-routing.Dka7FRNt.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -91,14 +91,14 @@
       "_chunk-CXsRlRas.js"
     ],
     "dynamicImports": [
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog",
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
-      "virtual:vike:pageConfigValuesAll:client:/pages/index",
-      "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/_error",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/index",
+      "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/search"
     ]
   },
@@ -282,7 +282,7 @@
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/search": {
-    "file": "assets/entries/pages_search.CtJQPzuk.js",
+    "file": "assets/entries/pages_search.DVr_fkcW.js",
     "name": "entries/pages/search",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/search",
     "isEntry": true,

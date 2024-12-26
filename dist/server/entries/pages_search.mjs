@@ -106,7 +106,7 @@ function SearchResultPage() {
     }
   }, []);
   const fetchRecipes = useCallback(async (searchQuery, loadedMeals = []) => {
-    const baseUrl = `${window.location.protocol}//${window.location.host}`;
+    const baseUrl = `${window.location.protocol}//api.${window.location.host}:3002`;
     const url = `${baseUrl}/api/recipes/customReceipt?search=${encodeURIComponent(searchQuery)}&loadedMeals=${encodeURIComponent(loadedMeals.join(","))}`;
     abortControllerRef.current = new AbortController();
     const { signal } = abortControllerRef.current;

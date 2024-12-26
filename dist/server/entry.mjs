@@ -7,102 +7,6 @@ const pageFilesList = [];
 const neverLoaded = {};
 const pageConfigsSerialized = [
   {
-    pageId: "/pages/blog",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/blog", "definedBy": "/pages/blog/" },
-    loadConfigValuesAll: () => import("./entries/pages_blog.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/blog/@id",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/blog/@id", "definedBy": "/pages/blog/@id/" },
-    loadConfigValuesAll: () => import("./entries/pages_blog_-id.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/index",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/", "definedBy": "/pages/index/" },
-    loadConfigValuesAll: () => import("./entries/pages_index.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
-    pageId: "/pages/recipes/@id",
-    isErrorPage: void 0,
-    routeFilesystem: { "routeString": "/recipes/@id", "definedBy": "/pages/recipes/@id/" },
-    loadConfigValuesAll: () => import("./entries/pages_recipes_-id.mjs"),
-    configValuesSerialized: {
-      ["isClientRuntimeLoaded"]: {
-        type: "computed",
-        definedAtData: null,
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      },
-      ["clientRouting"]: {
-        type: "standard",
-        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
-        valueSerialized: {
-          type: "js-serialized",
-          value: true
-        }
-      }
-    }
-  },
-  {
     pageId: "/pages/_error",
     isErrorPage: true,
     routeFilesystem: void 0,
@@ -179,6 +83,102 @@ const pageConfigsSerialized = [
     isErrorPage: void 0,
     routeFilesystem: { "routeString": "/admin/createArticle", "definedBy": "/pages/admin/createArticle/" },
     loadConfigValuesAll: () => import("./entries/pages_admin_createArticle.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/blog",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/blog", "definedBy": "/pages/blog/" },
+    loadConfigValuesAll: () => import("./entries/pages_blog.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/blog/@id",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/blog/@id", "definedBy": "/pages/blog/@id/" },
+    loadConfigValuesAll: () => import("./entries/pages_blog_-id.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/index",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/", "definedBy": "/pages/index/" },
+    loadConfigValuesAll: () => import("./entries/pages_index.mjs"),
+    configValuesSerialized: {
+      ["isClientRuntimeLoaded"]: {
+        type: "computed",
+        definedAtData: null,
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      },
+      ["clientRouting"]: {
+        type: "standard",
+        definedAtData: { "filePathToShowToUser": "vike-react/config", "fileExportPathToShowToUser": ["default", "clientRouting"] },
+        valueSerialized: {
+          type: "js-serialized",
+          value: true
+        }
+      }
+    }
+  },
+  {
+    pageId: "/pages/recipes/@id",
+    isErrorPage: void 0,
+    routeFilesystem: { "routeString": "/recipes/@id", "definedBy": "/pages/recipes/@id/" },
+    loadConfigValuesAll: () => import("./entries/pages_recipes_-id.mjs"),
     configValuesSerialized: {
       ["isClientRuntimeLoaded"]: {
         type: "computed",
@@ -341,7 +341,7 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.C9sj8Opt.js",
+    "file": "assets/entries/entry-client-routing.Dka7FRNt.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -349,14 +349,14 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
       "_chunk-CXsRlRas.js"
     ],
     "dynamicImports": [
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog",
-      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
-      "virtual:vike:pageConfigValuesAll:client:/pages/index",
-      "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/_error",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-blog",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/create-new-image",
       "virtual:vike:pageConfigValuesAll:client:/pages/admin/createArticle",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog",
+      "virtual:vike:pageConfigValuesAll:client:/pages/blog/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/index",
+      "virtual:vike:pageConfigValuesAll:client:/pages/recipes/@id",
       "virtual:vike:pageConfigValuesAll:client:/pages/search"
     ]
   },
@@ -540,7 +540,7 @@ const pageFiles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/search": {
-    "file": "assets/entries/pages_search.CtJQPzuk.js",
+    "file": "assets/entries/pages_search.DVr_fkcW.js",
     "name": "entries/pages/search",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/search",
     "isEntry": true,
