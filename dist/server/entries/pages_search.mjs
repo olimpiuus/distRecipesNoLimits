@@ -114,7 +114,7 @@ function SearchResultPage() {
       return parts.join(".");
     };
     const mainDomain = getMainDomain(window.location.host);
-    const baseUrl = `${window.location.protocol}//api.${mainDomain}:3002`;
+    const baseUrl = `${window.location.protocol}//api.${mainDomain}`;
     const url = `${baseUrl}/api/recipes/customReceipt?search=${encodeURIComponent(searchQuery)}&loadedMeals=${encodeURIComponent(loadedMeals.join(","))}`;
     abortControllerRef.current = new AbortController();
     const { signal } = abortControllerRef.current;

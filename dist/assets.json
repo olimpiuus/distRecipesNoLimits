@@ -83,7 +83,7 @@
     ]
   },
   "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.x4t8wrPn.js",
+    "file": "assets/entries/entry-client-routing.Bzw2gi9k.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
@@ -282,7 +282,7 @@
     ]
   },
   "virtual:vike:pageConfigValuesAll:client:/pages/search": {
-    "file": "assets/entries/pages_search.CDiS1pC8.js",
+    "file": "assets/entries/pages_search.D-6_Htv3.js",
     "name": "entries/pages/search",
     "src": "virtual:vike:pageConfigValuesAll:client:/pages/search",
     "isEntry": true,
